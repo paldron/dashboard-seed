@@ -1,9 +1,10 @@
 {
-  "name": "muwsa_dashboard_server",
+  "name": "dashboard_server",
   "version": "1.0.0",
   "description": "Dashboard",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Augusto Shoo",
@@ -18,5 +19,8 @@
   },
   "devDependencies": {
     "prettier": "^2.3.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
