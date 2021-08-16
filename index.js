@@ -3,8 +3,8 @@ const app = express();
 const cors = require("cors");
 const path = require("path");
 const redis = require("redis");
-const publisher = redis.createClient("redis://127.0.0.1:7071");
-const subscriber = redis.createClient("redis://127.0.0.1:7071");
+const publisher = redis.createClient(process.env.REDIS_URL);
+const subscriber = redis.createClient(process.env.REDIS_URL);
 const db = require("./models"); // Contains DB configurations and Reference date default settings
 global.db = db;
 subscriber.del("SaReadings");
