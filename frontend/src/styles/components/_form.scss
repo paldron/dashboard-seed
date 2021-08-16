@@ -1,0 +1,125 @@
+.form {
+    width: 50%;
+    color: $color-grey-dark-3;
+
+    &_group {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        &-input {
+            width: 100%;
+            outline: none;
+            border: none;
+            display: block;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            border-radius: 3px;
+            border-bottom: 3px solid transparent;
+            transition: all .2s;
+
+            &:focus {
+                border-bottom: 3px solid $color-primary-dark;
+
+                &:invalid {
+                    border-bottom: 3px solid orangered;
+                }
+            }
+
+            &::-webkit-placeholder {
+                color: $color-grey-dark-2;
+            }
+        }
+
+        &-label {
+            display: inline-block;
+            font-size: 1.4rem;
+            padding-left: 1.5rem;
+            margin-top: .4rem;
+            color: $color-line-light;
+            transform: translateY(0);
+            opacity: 1;
+            transition: all .2s;
+        }
+
+        &-input:placeholder-shown+&-label {
+            transform: translateY(-3rem);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &_radio {
+            display: inline-block;
+            padding: 0 3.5rem;
+
+            &-input {
+                display: none;
+            }
+
+            &-label {
+                color: $color-line-light;
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                font-weight: 300;
+                position: relative;
+            }
+
+            &-button {
+                display: inline-block;
+                position: absolute;
+                top: -.3rem;
+                left: -3.5rem;
+                width: 3rem;
+                height: 3rem;
+                border: .5rem solid $color-line-light;
+                border-radius: 50%;
+
+                &::after {
+                    content: '';
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $color-line-light;
+                    border-radius: 50%;
+                    width: 55%;
+                    height: 55%;
+                }
+            }
+
+            &-input:checked~&-label &-button::after {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.mi-login-form {
+    //border: 1px solid rgba(grey,.2);
+    
+
+    .login-form-forgot {
+        float: right;
+    }
+}
+
+.mi-login-modal {
+    height: 100vh;
+    width: 100vw !important;
+    top: 0;
+    background-color: #fafafa; // Set custom background here
+
+    .ant-modal-content{
+        width: 420px !important;
+        margin: 0 auto;
+        margin-top: 12%;
+    }
+    .ant-modal-body {
+        padding-bottom: 1px;
+    }
+}

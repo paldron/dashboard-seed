@@ -1,0 +1,168 @@
+.mi-org-target {
+  &__card {
+    background-color: transparent;
+    background-image: linear-gradient(
+      175deg,
+      rgba(#fff, 0.7) 0%,
+      rgba(#fff, 0.5) 50%,
+      rgba(#fff, 0.2) 60%,
+      rgba(#fff, 0.01) 80%
+    );
+    border: none;
+    display: block;
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+
+    .ant-card-head {
+      border-bottom: none;
+      font-weight: 400;
+      min-height: 30px;
+
+      .ant-card-head-title {
+        padding-bottom: 0;
+        color: rgb(0, 64, 116);
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+      }
+    }
+
+    &--subtitle {
+      font-style: italic;
+      font-size: 1.4rem;
+      text-align: right;
+    }
+  }
+
+  &__statistic {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media only screen and (max-width: 1200px) {
+      justify-content: space-around;
+    }
+
+    &:not(:first-child) {
+      margin-top: 3.6rem;
+    }
+
+    .ant-statistic-content {
+      font-size: 2.8rem;
+      padding-left: 7px;
+      color: rgb(0, 94, 170);
+      @media only screen and (max-width: 1440px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    .ant-statistic-title {
+      color: rgba(53, 54, 54, 0.986);
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 390;
+      letter-spacing: 2px;
+    }
+
+    &--sub {
+      .ant-statistic-content {
+        font-size: 2.4rem;
+        @media only screen and (max-width: 1440px) {
+          font-size: 2rem;
+        }
+      }
+
+      .ant-statistic-title {
+        font-style: italic;
+        font-size: 1.8rem;
+        @media only screen and (max-width: 1440px) {
+          font-size: 1.6rem;
+        }
+      }
+
+      .ant-statistic-content-suffix,
+      .ant-statistic-content-value-decimal {
+        font-size: 1.4rem;
+        @media only screen and (max-width: 1440px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.bill-calculator {
+  background-color: transparent;
+  background-image: linear-gradient(
+    175deg,
+    rgba(#fff, 0.02) 0%,
+    rgba(#fff, 0.3) 30%,
+    rgba(#fff, 0.4) 50%,
+    rgba(#fff, 0.5) 60%,
+    rgba(#fff, 0.01) 94%
+  );
+  border: none;
+  display: block;
+  min-height: 20rem;
+  @media only screen and (max-width: 576px) {
+    display: none;
+  }
+
+  .ant-card-head {
+    border-bottom: none;
+    font-weight: 400;
+    min-height: 30px;
+
+    .ant-card-head-title {
+      padding-bottom: 0;
+      color: rgb(0, 64, 116);
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+    }
+  }
+  &__title {
+    text-align: end;
+    padding-right: 1rem;
+    padding-bottom: .7rem;
+    .ant-typography {
+        font-style: italic;
+        font-size: 1.4rem;
+        font-weight: 440;
+    }
+  }
+  &__input {
+    max-width: fit-content;
+  }
+  .ant-descriptions-item > span {
+    display: block;
+  }
+  .ant-descriptions-item-label {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+  }
+  .ant-descriptions-item-content {
+    text-align: center;
+  }
+  span.ant-typography-ellipsis {
+    width: 100%;
+  }
+  .ant-descriptions-title {
+    font-weight: 400;
+    width: 90%;
+    font-size: 1.4rem;
+  }
+  .account-label {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .ant-divider-inner-text {
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.3rem;
+  }
+  .ant-input-number {
+      width: 100%;
+  }
+}

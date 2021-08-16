@@ -1,0 +1,16 @@
+.Modal {
+    position: absolute;
+    outline: none;
+    border: 1px solid rgba($color-grey-dark,.4);
+    background-color: $color-background;
+    border-radius: 3px;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color-primary,.3);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "muwsa_dashboard_server",
+  "version": "1.0.0",
+  "description": "Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Augusto Shoo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "mssql": "^6.0.1",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}

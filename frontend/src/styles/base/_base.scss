@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.25%;
+}
+
+body {
+    //padding: 3rem;
+    box-sizing: border-box;
+}
+
+/* .layout {
+    color: white;
+    background-color: $color-primary;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+} */
+
+.App {
+    
+}

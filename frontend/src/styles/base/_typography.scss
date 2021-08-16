@@ -1,0 +1,124 @@
+/* body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.4rem;
+    color: rgba($color-black, .85);
+    line-height: 1.7;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+} */
+
+
+.heading-primary {
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    font-weight: 300;
+
+    &--main {
+        text-transform: uppercase;
+        font-size: 6rem;
+        display: block;
+        letter-spacing: 4.46rem;
+        height: auto;
+        animation: moveInLeft 1.4s ease-out;
+    }
+
+    &--sub {
+        text-transform: uppercase;
+        font-size: 2rem;
+        display: block;
+        letter-spacing: .4rem;
+        animation: moveInRight 1.4s ease-out;
+    }
+}
+
+.divider-text {
+    color: rgba(black, .65);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.mi_upload>.ant-upload {
+    min-width: 20rem;
+    min-height: 20rem;
+}
+
+.mi_upload>.ant-upload,
+.mi_upload .ant-upload-list-item {
+    width: auto;
+    height: auto;
+}
+
+.ant-checkbox-group.mi-check-group {
+    display: flex;
+    flex-direction: column;
+
+    >* {
+        margin-left: 30%;
+        margin-top: 1rem;
+    }
+}
+
+.divider-text {
+    color: black;
+}
+
+.ant-divider-horizontal.ant-divider-with-text-right {
+    &::before {
+        visibility: hidden;
+    }
+}
+
+.mi-narrow-divider.ant-divider-horizontal.ant-divider-with-text-center {
+    .ant-divider-inner-text {
+        &::after {}
+    }
+
+    &::after {
+        width: 20%;
+        right: 20%;
+    }
+
+    &::before {
+        width: 20%;
+        left: 20%;
+    }
+}
+
+.ant-divider-horizontal.ant-divider-with-text-right::before,
+.ant-divider-horizontal.ant-divider-with-text-center::after {}
+
+.ant-form-item-label>label {
+    color: black;
+}
+
+.mi-header {
+    margin-bottom: .9rem;
+    .ant-page-header-heading-title {
+        font-weight: 330;
+        font-size: 24px;
+        text-align: center;
+        float:none;
+        //color: rgba(black, .7);
+        //text-transform: uppercase;
+    }
+}
+
+.mi-current-user {
+    &__name {
+        display: inline-block;
+        margin-right: 1rem;
+        font-size: 16px;
+    }
+}

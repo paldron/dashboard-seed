@@ -1,0 +1,19 @@
+[
+  [
+    {
+      "customerName": "ERICK ELINEZA MBWAMBO ",
+      "meter_number": "00164774",
+      "category": "DOMESTIC",
+      "category_id": "1",
+      "is_sewered": false
+    }
+  ],
+  [{ "paid": 43100 }],
+  [
+    { "startunit": 0, "endunit": 10, "rate": 800 },
+    { "startunit": 10, "endunit": 30, "rate": 940 },
+    { "startunit": 30, "endunit": 0, "rate": 1020 }
+  ],
+  [{ "rate": 426 }],
+  []
+]

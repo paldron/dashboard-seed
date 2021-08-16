@@ -1,0 +1,77 @@
+.app-logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+}
+
+.app-right-layout {
+    //min-height: 100vh;
+    background-color:  rgba(21, 101, 147, 0.598); //#f5f5f5b7;
+    background-image: linear-gradient(160deg, rgba(212, 235, 243, 0.097) 0%, rgba(49, 142, 196, 0.578) 10%,  rgba(245, 245, 245, 0.706) 18%, rgba(245, 245, 245, 0.906) 30%, rgba(255, 255, 255, 0.708) 45%, rgba(245, 245, 245, 0.741) 65%, rgba(245, 245, 245, 0.541) 85%);
+}
+
+.app-layout-header {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    transition: all .2s;
+
+    &__trigger {
+        font-size: 18px;
+        line-height: 64px;
+        padding: 0 24px;
+        cursor: pointer;
+        transition: color 0.3s;
+        margin-left: -5rem;
+
+        &:hover {
+            color: #1890ff;
+        }
+    }
+}
+
+// .ant-layout-sider-collapsed+.app-right-layout {
+    
+// }
+
+.page-custom {
+    padding: 1rem;
+    padding-bottom: .5rem;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+// .mi-app-layout-content {
+    
+// }
+
+.mi-app-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        align-self: center;
+        width: auto;
+        height: auto;
+        margin-top: .2rem;
+        margin-left: -50px;
+        @media only screen and (max-width: 1200px) {
+            margin-top: 2rem;
+            margin-left: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            margin-top: .2rem;
+            margin-left: 0;
+        }
+    }
+     div {
+         text-align: center;
+         margin-top: 1.7rem;
+         font-size: 3rem;
+         font-weight: 340;
+         letter-spacing: 10px;
+         color: rgb(255, 255, 255);
+     }
+}

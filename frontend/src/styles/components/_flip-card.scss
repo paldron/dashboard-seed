@@ -1,0 +1,98 @@
+.flip-card {
+    position: relative;
+    perspective: 150rem;
+    height: 45rem;
+
+    &_side {
+        position: absolute;
+        height: 45rem;
+        width: 100%;
+        backface-visibility: hidden;
+        transition: all .8s ease;
+        transform-style: preserve-3d;
+        &--front {
+            background-color: azure;
+        }
+        &--back {
+            background-color: burlywood;
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &_side{
+        &--front {
+            transform: rotateY(-180deg);
+        }
+        &--back{
+            transform: rotateY(0);
+        }
+    }
+}
+
+.mi-staff-card {
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.09);
+    border-color: rgba(0, 0, 0, 0.09);
+
+    .ant-row-flex {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .ant-card-body{
+        padding-top: 16px;
+    }
+
+    &__name {
+        display: block;
+        text-align: center;
+        font-size: 18px; 
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    &__activity {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        //justify-content: space-between;
+        flex-direction: column;
+        &-header {
+            //align-self: center;
+            font-size: 14px;
+            margin-top: 7px;
+            font-weight: 500;
+            span {
+                display: block;
+                float: left;
+                &:last-child{
+                    font-weight: 300;
+                    float: right;
+                }
+            }
+        }
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 0;
+            padding-top: 3px;
+        }
+    }
+
+    &__descr {
+        &-title {
+            display: block;
+            font-weight: 500;
+        }
+        &-content {
+            display: block;
+        }
+        &--right &-title{
+            text-align: right;
+        }
+        &--right &-content{
+            text-align: center;
+        }
+    }
+}
+

@@ -1,0 +1,42 @@
+.grid-manual {
+    color: $color-primary-text;
+    margin-top: 4rem;
+    .row {
+        &:not(:last-child) {
+            margin-bottom: $grid-m-vertical-gutter;
+        }
+        @include clearfix;
+
+        [class^='col-'] {
+            background-color: $color-primary;
+            float: left;
+            &:not(:last-child) {
+                margin-right: $grid-m-horizontal-gutter;
+            }
+        }
+
+        .col-1-of-2 {
+            width: calc((100% - #{$grid-m-horizontal-gutter}) / 2);
+        }
+
+        .col-1-of-3 {
+            width: calc((100% - #{$grid-m-horizontal-gutter}*2) / 3);
+        }
+
+        .col-2-of-3 {
+            width: calc(((100% - #{$grid-m-horizontal-gutter}*2) / 3)*2 + #{$grid-m-horizontal-gutter});
+        }
+
+        .col-1-of-4 {
+            width: calc((100% - #{$grid-m-horizontal-gutter}*3) / 4);
+        }
+
+        .col-2-of-4 {
+            width: calc(((100% - #{$grid-m-horizontal-gutter}*3) / 4)*2 + #{$grid-m-horizontal-gutter});
+        }
+
+        .col-3-of-4 {
+            width: calc(((100% - #{$grid-m-horizontal-gutter}*3) / 4)*3 + #{$grid-m-horizontal-gutter}*2);
+        }
+    }
+}
